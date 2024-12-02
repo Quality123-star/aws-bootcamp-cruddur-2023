@@ -1,0 +1,19 @@
+*/ aws budgets create-budget \
+    --account-id $AWS_ACCOUNT_ID \
+    --budget file://aws/json/budget.json \
+    --notifications-with-subscribers file://aws/json/budget-notifications-with-subscribers.json
+
+aws sns subscribe \
+    --topic-arn="topicARn" \
+    --protocol=email \
+    --notification-endpoint sulaimonqlove@gmail.com
+
+
+aws budgets delete-budget \
+    --account-id $AWS_ACCOUNT_ID \
+    --budget-name "Bugt ntc from cli"
+
+
+aws budgets describe-budgets \
+    --account-id $AWS_ACCOUNT_ID
+
