@@ -17,3 +17,11 @@ aws budgets delete-budget \
 aws budgets describe-budgets \
     --account-id $AWS_ACCOUNT_ID
 
+
+
+JLk4kqfNZKYNv24kFYfesP
+
+export HONEYCOMB_API_KEY="JLk4kqfNZKYNv24kFYfesP"
+export HONEYCOMB_SERVICE_NAME="Cruddur"
+gp env HONEYCOMB_API_KEY="JLk4kqfNZKYNv24kFYfesP"
+gp env HONEYCOMB_SERVICE_NAME="Cruddur"
